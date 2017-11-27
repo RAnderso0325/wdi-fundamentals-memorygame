@@ -29,7 +29,7 @@ var checkForMatch = function () {
 	if(cardsInPlay.length === 2) {
 		if (cardsInPlay[0] === cardsInPlay[1]) {
 		document.getElementById('wins').textContent = ++wins;
-		document.getElementById('matchInfo').textContent = "You found a math!";
+		document.getElementById('matchInfo').textContent = "You found a match!";
 		} else {
 		document.getElementById('losses').textContent = ++losses;
 		document.getElementById('matchInfo').textContent = "Uhoh, those don't match. Try again!";
