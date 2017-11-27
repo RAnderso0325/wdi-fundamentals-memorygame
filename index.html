@@ -25,13 +25,21 @@
 			<a name="game">Game</a>
 		</h2>
 
-		<div>
-			<img src="images/back.png" alt="Queen of Diamonds">
-			<img src="images/back.png" alt="Queen of Hearts">
-			<img src="images/back.png" alt="King of Diamonds">
-			<img src="images/back.png" alt="King of Hearts">
-		</div>
+		<p class="scoreboard">
+			<span class="name">Wins: </span> <span id="wins">0</span> |
+			<span class="name">Losses: </span> <span id="losses">0</span>
+		</p>
+
+		<div id="game-board" class="board clearfix"></div>
+
+		<p id="matchInfo" class="name"></p>
+		
+		<p>
+			<a class="name" href="#game" onclick="javascript:resetBoard();">Reset Board</a>
+			<a class="name" href="index.html">Reset Game</a>
+		</p>
 	</main>
+	
 	<footer class="clearfix">
 		<p class="copyright">Copyright 2017</p>
 		<p class="message">Created with &hearts; by <span class="name">GA</span></p>
